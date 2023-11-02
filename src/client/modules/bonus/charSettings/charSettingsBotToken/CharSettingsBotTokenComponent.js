@@ -66,7 +66,7 @@ class CharSettingsBotTokenComponent {
 										},
 									},
 								}, [
-									n.component(new FAIcon('key')),
+									n.component(new FAIcon('key-variant')),
 								]),
 								n.elem('div', { className: 'badge--info' }, [
 									n.elem('div', { className: 'badge--subtitle' }, [

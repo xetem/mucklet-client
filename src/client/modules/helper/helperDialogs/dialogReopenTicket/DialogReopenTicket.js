@@ -35,7 +35,7 @@ class DialogReopenTicket {
 			className: 'dialogreopenticket',
 			content: new Elem(n => n.elem('div', [
 				n.component(new ModelTxt(ticket.char, m => (m.name + " " + m.surname).trim(), { className: 'dialogreopenticket--fullname flex-1' })),
-				n.component('comment', new PanelSection(
+				n.component('chat', new PanelSection(
 					l10n.l('dialogReopenTicket.comment', "Comment"),
 					new Textarea(model.comment, {
 						className: 'dialogreopenticket--comment dialog--input common--paneltextarea-small common--desc-size',
@@ -64,7 +64,7 @@ class DialogReopenTicket {
 		});
 
 		this.dialog.open();
-		this.dialog.getContent().getNode('comment').getComponent().getElement().focus();
+		this.dialog.getContent().getNode('chat').getComponent().getElement().focus();
 	}
 
 	_reopenTicket(ticket, model) {

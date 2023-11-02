@@ -33,7 +33,7 @@ class CreateProfile {
 		this.module.cmd.addPrefixCmd('create', {
 			key: 'profile',
 			next: [
-				new TextStep('key', {
+				new TextStep('key-variant', {
 					regex: /^[\w\s]*\w/,
 					name: "profile keyword",
 					maxLength: () => this.module.info.getCore().keyMaxLength,

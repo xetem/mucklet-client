@@ -32,7 +32,7 @@ class DialogCloseReport {
 			className: 'dialogclosereport',
 			content: new Elem(n => n.elem('div', [
 				n.component(new ModelTxt(report.char, m => (m.name + " " + m.surname).trim(), { className: 'dialogclosereport--fullname flex-1' })),
-				n.component('comment', new PanelSection(
+				n.component('chat', new PanelSection(
 					l10n.l('dialogCloseReport.comment', "Comment"),
 					new Textarea(model.comment, {
 						className: 'dialogclosereport--comment dialog--input common--paneltextarea-small common--desc-size',
@@ -61,13 +61,13 @@ class DialogCloseReport {
 		});
 
 		this.dialog.open();
-		this.dialog.getContent().getNode('comment').getComponent().getElement().focus();
+		this.dialog.getContent().getNode('chat').getComponent().getElement().focus();
 	}
 
 	_closeReport(report, model) {
 		if (this.closePromise) return this.closePromise;
 
-		report.call('close', {
+		report.call('close-thick', {
 			comment: model.comment.trim(),
 		}).then(() => {
 			if (this.dialog) {

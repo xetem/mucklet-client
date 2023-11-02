@@ -26,7 +26,7 @@ class CreateTeleport {
 			key: 'teleport',
 			next: [
 				new DelimStep("=", { errRequired: null }),
-				new TextStep('key', {
+				new TextStep('key-variant', {
 					regex: /^[\w\s]*\w/,
 					maxLength: () => this.module.info.getCore().keyMaxLength,
 					errTooLong: keyTooLong,

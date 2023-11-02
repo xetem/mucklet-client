@@ -44,7 +44,7 @@ class PageCharSelect {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('user-plus')),
+				n.component(new FAIcon('account-plus')),
 			])),
 			factory: (state, close, layoutId) => ({
 				component: new PageCharSelectComponent(this.module, state, close),

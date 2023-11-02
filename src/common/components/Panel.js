@@ -21,7 +21,7 @@ class Panel extends RootElem {
 	 * @param {boolean} [opt.noToggle] Flag to tell if the panel should not show a toggle button.
 	 * @param {function} [opt.onToggle] Optional callback function called whenever the panel is toggled.
 	 * @param {function} [opt.onClick] Optional callback function called whenever the top-right button is clicked. Button will be hidden if null.
-	 * @param {function} [opt.clickIcon] Optional icon to use for the top-right button. Defaults to 'close'.
+	 * @param {function} [opt.clickIcon] Optional icon to use for the top-right button. Defaults to 'close-thick'.
 	 * @param {function} [opt.footerComponent] Optional footer component.
 	 * @param {function} [opt.subheaderComponent] Optional subheader component.
 	 * @param {function} [opt.btnClass] Optional class name for buttons.
@@ -48,7 +48,7 @@ class Panel extends RootElem {
 				},
 			},
 		}, [
-			n.component(new FAIcon('caret-left')),
+			n.component(new FAIcon('menu-left')),
 		]));
 
 		// Click button is the corner button that can be clicked for an action.
@@ -198,12 +198,12 @@ class Panel extends RootElem {
 	/**
 	 * Sets the right corner button and click callback.
 	 * @param {?function} onClick Callback function when clicked. If null, the button will be removed.
-	 * @param {string} [icon] Icon to use for button. Defaults to 'close'
+	 * @param {string} [icon] Icon to use for button. Defaults to 'close-thick'
 	 * @returns {this}
 	 */
 	setButton(onClick, icon) {
 		this._onButtonClick = onClick || null;
-		this.clickBtn.getNode('icon').setIcon(icon || 'chevron-circle-left');
+		this.clickBtn.getNode('icon').setIcon(icon || 'chevron-left-circle');
 		this._rootElem.getNode('btn').setComponent(onClick ? this.clickBtn : null);
 		return this;
 	}

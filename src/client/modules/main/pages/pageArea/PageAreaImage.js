@@ -113,7 +113,7 @@ class PageAreaImage {
 							ev.stopPropagation();
 						},
 					}}, [
-						n.component(new FAIcon('search-minus')),
+						n.component(new FAIcon('magnify-minus-outline')),
 					]),
 					n.elem('button', { className: 'pagearea-image--zoomin pagearea-image--btn iconbtn' + btnSize, events: {
 						mousedown: (c, ev) => {
@@ -121,7 +121,7 @@ class PageAreaImage {
 							ev.stopPropagation();
 						},
 					}}, [
-						n.component(new FAIcon('search-plus')),
+						n.component(new FAIcon('magnify-plus-outline')),
 					]),
 					n.elem('button', { className: 'pagearea-image--center pagearea-image--btn iconbtn' + btnSize, events: {
 						click: (c, ev) => {
@@ -129,7 +129,7 @@ class PageAreaImage {
 							ev.stopPropagation();
 						},
 					}}, [
-						n.component(new FAIcon('dot-circle-o')),
+						n.component(new FAIcon('record-circle-outline')),
 					]),
 				])),
 				(m, c, change) => {

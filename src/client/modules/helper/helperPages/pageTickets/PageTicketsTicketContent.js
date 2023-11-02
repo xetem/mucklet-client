@@ -36,7 +36,7 @@ class PageTicketsTicketContent {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('comment')),
+				n.component(new FAIcon('chat')),
 			])),
 			reopen: !this.isClosed ? null : new Elem(n => n.elem('button', { className: 'btn icon-left tiny flex-1 warning', events: {
 				click: (el, e) => {
@@ -44,7 +44,7 @@ class PageTicketsTicketContent {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('refresh')),
+				n.component(new FAIcon('cached')),
 				n.component(new Txt(txtReopen)),
 			])),
 			assign: this.isClosed ? null : new Elem(n => n.elem('button', { className: 'btn icon-left tiny primary flex-1' + (this.isClosed ? ' hide' : ''), events: {
@@ -53,7 +53,7 @@ class PageTicketsTicketContent {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component('icon', new FAIcon('user-plus')),
+				n.component('icon', new FAIcon('account-plus')),
 				n.component('txt', new Txt(txtAssign)),
 			])),
 			close: this.isClosed ? null : new Elem(n => n.elem('button', { className: 'btn icon-left tiny flex-1 warning', events: {
@@ -62,7 +62,7 @@ class PageTicketsTicketContent {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('times')),
+				n.component(new FAIcon('close-thick')),
 				n.component(new Txt(txtClose)),
 			])),
 		};
@@ -126,8 +126,8 @@ class PageTicketsTicketContent {
 			c.assign.getNode('icon').setIcon(this.ticket.assigned
 				? isAssigned
 					? 'user-times'
-					: 'user-plus'
-				: 'user-plus',
+					: 'account-plus'
+				: 'account-plus',
 			);
 			c.assign.getNode('txt').setText(this.ticket.assigned
 				? isAssigned

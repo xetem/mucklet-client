@@ -32,7 +32,7 @@ class OverviewSupporterStatusOffer {
 							n.elem('div', { className: 'badge--faicon' }, [
 								n.component(isOnce
 									? new Txt("30", { className: 'badge--faicontext' })
-									: new FAIcon('refresh'),
+									: new FAIcon('cached'),
 								),
 							]),
 							n.elem('div', { className: 'badge--info-morepad' }, [

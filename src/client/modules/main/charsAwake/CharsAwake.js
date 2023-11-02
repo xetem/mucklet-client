@@ -180,7 +180,7 @@ class CharsAwake {
 			return;
 		}
 		// Check it is a key change that might affect the filter
-		if (change.hasOwnProperty('key') &&
+		if (change.hasOwnProperty('key-variant') &&
 			(this.filter.containsTag(change.key) || this.filter.containsTag(tag.key))
 		) {
 			// Update the entire list

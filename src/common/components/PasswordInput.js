@@ -57,7 +57,7 @@ class PasswordInput extends RootElem {
 		this._showPass = typeof show == 'undefined' ? !this._showPass : !!show;
 
 		this._input.setAttribute('type', this._showPass ? 'text' : 'password');
-		this._eye.setIcon(this._showPass ? 'eye-slash' : 'eye');
+		this._eye.setIcon(this._showPass ? 'eye-off' : 'eye');
 
 		return this;
 	}

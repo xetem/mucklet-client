@@ -81,7 +81,7 @@ class CharPanel {
 
 		this.component
 			.setTitle(pi.title || '')
-			.setButton(pi.close || (page && page.close) || null, pi.closeIcon || 'chevron-circle-left')
+			.setButton(pi.close || (page && page.close) || null, pi.closeIcon || 'chevron-left-circle')
 			.setComponent(pi.component, {
 				onRender: () => {
 					// Restore scrolling of page

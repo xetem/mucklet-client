@@ -43,7 +43,7 @@ class PageMail {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('envelope')),
+				n.component(new FAIcon('email')),
 				n.component(new ModelComponent(
 					this.unread,
 					new Elem(n => n.elem('div', { className: 'counter alert' }, [

@@ -23,7 +23,7 @@ class HubLogoutTool {
 			id: 'logout',
 			sortOrder: 1000,
 			name: l10n.l('playerPanel.logout', "Logout"),
-			icon: 'sign-out',
+			icon: 'logout',
 			type: 'footer',
 			onClick: () => this.logout(),
 		});

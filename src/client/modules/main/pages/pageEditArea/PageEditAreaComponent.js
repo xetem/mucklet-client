@@ -79,7 +79,7 @@ class PageEditAreaComponent {
 									}),
 								},
 							}, [
-								n.component(new FAIcon('trash')),
+								n.component(new FAIcon('delete')),
 								n.component(new Txt(l10n.l('pageEditArea.delete', "Delete"))),
 							])),
 							(m, c) => c.setProperty('disabled', m.image ? null : 'disabled'),
@@ -264,12 +264,12 @@ class PageEditAreaComponent {
 					n.elem('setOwner', 'button', { events: {
 						click: () => this.module.dialogSetAreaOwner.open(this.ctrl, this.area),
 					}, className: 'iconbtn medium' }, [
-						n.component(new FAIcon('key')),
+						n.component(new FAIcon('key-variant')),
 					]),
 					n.elem('delete', 'button', { events: {
 						click: () => this._deleteArea(),
 					}, className: 'iconbtn medium' }, [
-						n.component(new FAIcon('trash')),
+						n.component(new FAIcon('delete')),
 					]),
 				])),
 				(m, c) => {

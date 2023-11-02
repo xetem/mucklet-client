@@ -90,7 +90,7 @@ class AvatarComponent extends Fader {
 
 		c.setComponent(m
 			? this.isError
-				? new FAIcon('times')
+				? new FAIcon('close-thick')
 				: src
 					? new Img(src, this.modalOnClick && imageId ? {
 						className: 'clickable',

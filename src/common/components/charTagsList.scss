@@ -37,14 +37,14 @@
 		}
 
 		&.like::before {
-			content: "\f00c";
+			content: "\f0e1e";
 		}
 
 		&.dislike {
 			color: $color5;
 			border-color: $color5;
 			&::before {
-				content: "\f05e";
+				content: "\f073a";
 			}
 		}
 
@@ -52,7 +52,7 @@
 			color: $color6;
 			border-color: $color6;
 			&::before {
-				content: "\f132";
+				content: "\f0780";
 				left: -10px;
 			}
 		}

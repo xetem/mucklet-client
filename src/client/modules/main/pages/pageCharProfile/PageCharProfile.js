@@ -31,7 +31,7 @@ class PageCharProfile {
 			componentFactory: (ctrl, char) => new Elem(n => n.elem('button', { className: 'iconbtn small', events: {
 				click: () => this.open(ctrl),
 			}}, [
-				n.component(new FAIcon('id-card-o')),
+				n.component(new FAIcon('card-account-details-outline')),
 			])),
 			filter: (ctrl, char) => ctrl.id == char.id,
 		});

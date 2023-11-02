@@ -26,7 +26,7 @@ class PageEditExitsExit {
 									e.stopPropagation();
 								} },
 							}, [
-								n.component(new FAIcon('caret-up')),
+								n.component(new FAIcon('menu-up')),
 							])),
 							(col, c) => c.setProperty('disabled', col.atIndex(0) == this.exit ? 'disabled' : null),
 						)),
@@ -39,7 +39,7 @@ class PageEditExitsExit {
 									e.stopPropagation();
 								} },
 							}, [
-								n.component(new FAIcon('caret-down')),
+								n.component(new FAIcon('menu-down')),
 							])),
 							(col, c) => c.setProperty('disabled', col.atIndex(col.length - 1) == this.exit ? 'disabled' : null),
 						)),

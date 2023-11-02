@@ -135,8 +135,8 @@ class PlayerPanel {
 			this.component
 				.setTitle(pi.title || '')
 				.setButton((m.page && m.page.close) || null, pi.closeIcon || (m.pageIdx > 0
-					? 'chevron-circle-left'
-					: 'times'
+					? 'chevron-left-circle'
+					: 'close-thick'
 				))
 				.setComponent(this.tabPage);
 		}

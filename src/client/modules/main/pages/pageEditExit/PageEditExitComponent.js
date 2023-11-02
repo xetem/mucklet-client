@@ -238,7 +238,7 @@ class PageEditExitComponent {
 							confirm: l10n.l('pageEditExit.delete', "Delete"),
 						}),
 					}, className: 'iconbtn medium' }, [
-						n.component(new FAIcon('trash')),
+						n.component(new FAIcon('delete')),
 					]),
 				]),
 			])),

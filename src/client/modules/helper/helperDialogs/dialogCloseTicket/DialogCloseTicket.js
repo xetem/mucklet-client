@@ -35,7 +35,7 @@ class DialogCloseTicket {
 			className: 'dialogcloseticket',
 			content: new Elem(n => n.elem('div', [
 				n.component(new ModelTxt(ticket.char, m => (m.name + " " + m.surname).trim(), { className: 'dialogcloseticket--fullname flex-1' })),
-				n.component('comment', new PanelSection(
+				n.component('chat', new PanelSection(
 					l10n.l('dialogCloseTicket.comment', "Comment"),
 					new Textarea(model.comment, {
 						className: 'dialogcloseticket--comment dialog--input common--paneltextarea-small common--desc-size',
@@ -64,13 +64,13 @@ class DialogCloseTicket {
 		});
 
 		this.dialog.open();
-		this.dialog.getContent().getNode('comment').getComponent().getElement().focus();
+		this.dialog.getContent().getNode('chat').getComponent().getElement().focus();
 	}
 
 	_closeTicket(ticket, model) {
 		if (this.closePromise) return this.closePromise;
 
-		ticket.call('close', {
+		ticket.call('close-thick', {
 			comment: model.comment.trim(),
 		}).then(() => {
 			if (this.dialog) {

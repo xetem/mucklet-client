@@ -21,7 +21,7 @@ class PageTeleportChar {
 			componentFactory: (ctrl, char) => new Elem(n => n.elem('button', { className: 'iconbtn small', events: {
 				click: () => this.open(ctrl),
 			}}, [
-				n.component(new FAIcon('arrows')),
+				n.component(new FAIcon('arrow-all')),
 			])),
 			filter: (ctrl, char) => ctrl.id == char.id,
 		});

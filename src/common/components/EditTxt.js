@@ -49,7 +49,7 @@ class EditTxt extends Elem {
 		let el = this.getElement();
 		if (!el) return;
 
-		this.getNode('icon').setIcon(this.editing ? 'pencil' : 'close');
+		this.getNode('icon').setIcon(this.editing ? 'pencil' : 'close-thick');
 		if (this.editing) {
 			this.addClass('editing');
 		} else {

@@ -56,7 +56,7 @@ class PageTicketsClosed {
 							new Elem(n => n.elem('button', { className: 'iconbtn medium light', events: {
 								click: () => this._loadMail(this.model.offset < defaultLimit ? 0 : this.model.offset - defaultLimit),
 							}}, [
-								n.component(new FAIcon('angle-left')),
+								n.component(new FAIcon('chevron-left')),
 							])),
 							(m, c) => c.setProperty('disabled', m.offset ? null : 'disabled'),
 						)),
@@ -65,7 +65,7 @@ class PageTicketsClosed {
 							new Elem(n => n.elem('button', { className: 'iconbtn medium light', events: {
 								click: () => this._loadMail(this.model.offset + defaultLimit),
 							}}, [
-								n.component(new FAIcon('angle-right')),
+								n.component(new FAIcon('chevron-right')),
 							])),
 							(m, c) => c.setProperty('disabled', m.count > defaultLimit ? null : 'disabled'),
 						)),

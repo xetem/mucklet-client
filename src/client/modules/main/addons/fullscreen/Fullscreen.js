@@ -40,7 +40,7 @@ class Fullscreen {
 						events: { click },
 					}, [
 						n.elem('div', { className: 'kebabmenu--itemicon flex-auto' }, [
-							n.component(new FAIcon(this.model.isFullscreen ? 'compress' : 'expand')),
+							n.component(new FAIcon(this.model.isFullscreen ? 'compress' : 'arrow-expand')),
 						]),
 						n.component(new Txt(
 							this.model.isFullscreen

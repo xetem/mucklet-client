@@ -35,7 +35,7 @@ class PageRoomProfile {
 			componentFactory: (ctrl, room) => new Elem(n => n.elem('button', { className: 'iconbtn small', events: {
 				click: () => this.open(ctrl, room),
 			}}, [
-				n.component(new FAIcon('id-card-o')),
+				n.component(new FAIcon('card-account-details-outline')),
 			])),
 			filter: (ctrl, room, canEdit, canDelete) => canEdit,
 		});

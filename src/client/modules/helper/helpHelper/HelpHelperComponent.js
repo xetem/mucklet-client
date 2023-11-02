@@ -20,7 +20,7 @@ const helpText =
 </section>
 <section class="charlog--pad">
 	<h4 class="charlog--pad">Help requests</h4>
-	<p>The medkit-icon in the Realm panel will show help requests sent by players. Make sure to assign a help ticket to yourself before handling it, to avoid confusion between helpers.</p>
+	<p>The medical-bag-icon in the Realm panel will show help requests sent by players. Make sure to assign a help ticket to yourself before handling it, to avoid confusion between helpers.</p>
 	<p>And if you try to summon or join them, remember to send them a friendly message first, letting them know you are responding to their request for help.</p>
 </section>`;
 

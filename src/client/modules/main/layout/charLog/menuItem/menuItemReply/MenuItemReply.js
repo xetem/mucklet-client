@@ -67,7 +67,7 @@ class MenuItemReply {
 		this.module.charLog.addMenuItem({
 			id: 'reply',
 			name: l10n.l('menuItemReply.reply', "Reply"),
-			icon: 'comment',
+			icon: 'chat',
 			onClick: this._onReply.bind(this),
 			filter: (charId, ev) => replyCmds[ev.type] && (ev.char.id != charId || countTargets(ev) == 1),
 			sortOrder: 10,

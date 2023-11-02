@@ -143,9 +143,9 @@ class MobileActivePanel {
 		let cb = on ? 'on' : 'off';
 		this.playerModel[cb]('change', this._onActiveChange);
 		this.module.charPages[cb]('open', this._onCharPanelOpen);
-		this.module.charPages[cb]('close', this._onCharPanelClose);
+		this.module.charPages[cb]('close-thick', this._onCharPanelClose);
 		this.module.roomPages[cb]('open', this._onRoomPanelOpen);
-		this.module.roomPages[cb]('close', this._onRoomPanelClose);
+		this.module.roomPages[cb]('close-thick', this._onRoomPanelClose);
 	}
 
 	_onActiveChange(changed) {

@@ -72,7 +72,7 @@ class OverlayNavComponent {
 						},
 					}, [
 						n.component(new ModelFader(this.model, [{
-							factory: m => new FAIcon(m.open ? 'times' : 'globe'),
+							factory: m => new FAIcon(m.open ? 'earth-off' : 'earth'),
 							hash: m => m.open,
 						}])),
 					]),

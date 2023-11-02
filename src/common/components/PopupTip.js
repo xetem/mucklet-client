@@ -42,7 +42,7 @@ class PopupTip extends RootElem {
 	 * @param {string|LocaleString|Component} tip Tip to show on click.
 	 * @param {object} [opt] Optional parameters.
 	 * @param {string} [opt.position] Position of the tooltip. May be 'left', 'right', 'top', 'bottom'. Defaults to 'left'. }
-	 * @param {string} [opt.icon] Font-awesome icon name. Defaults to 'info-circle'.
+	 * @param {string} [opt.icon] Font-awesome icon name. Defaults to 'information'.
 	 * @param {string} [opt.className] Additional class names to append to font-awesome class names.
 	 * @param {object} [opt.attributes] Key/value attributes object
 	 * @param {object} [opt.events] Key/value events object, where the key is the event name, and value is the callback.
@@ -78,7 +78,7 @@ class PopupTip extends RootElem {
 			]
 			: [
 				n.elem('div', { className: 'popuptip--btn' }, [
-					n.component(new FAIcon(opt.icon || 'info-circle', { className: 'popuptip--icon' })),
+					n.component(new FAIcon(opt.icon || 'information', { className: 'popuptip--icon' })),
 				]),
 				n.component('tip', new Fader()),
 			],

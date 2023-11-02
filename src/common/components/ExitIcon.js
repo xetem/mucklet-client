@@ -4,20 +4,20 @@ import './exitIcons.scss';
 export const exitIcons = [ 'n', 'ne', 'e', 'se', 's', 'sw', 'w', 'nw', 'up', 'down', 'in', 'out' ];
 
 const exitIconMap = {
-	'n': 'fa-arrow-up',
-	'ne': 'fa-arrow-up',
-	'e': 'fa-arrow-right',
-	'se': 'fa-arrow-right',
-	's': 'fa-arrow-down',
-	'sw': 'fa-arrow-down',
-	'w': 'fa-arrow-left',
-	'nw': 'fa-arrow-left',
-	'up': 'fa-sign-out',
-	'down': 'fa-sign-in',
-	'in': 'fa-sign-in',
-	'out': 'fa-sign-out',
+	'n': 'mdi-arrow-up-thick',
+	'ne': 'mdi-arrow-top-right-thick',
+	'e': 'mdi-arrow-right-thick',
+	'se': 'mdi-arrow-bottom-right-thick',
+	's': 'mdi-arrow-down-thick',
+	'sw': 'mdi-arrow-bottom-left-thick',
+	'w': 'mdi-arrow-left-thick',
+	'nw': 'mdi-arrow-top-left-thick',
+	'up': 'mdi-stairs-up',
+	'down': 'mdi-stairs-down',
+	'in': 'mdi-login',
+	'out': 'mdi-logout',
 
-	'dot': 'fa-circle-thin',
+	'dot': 'mdi-circle-outline',
 };
 
 /**
@@ -55,7 +55,7 @@ class ExitIcon extends RootElem {
 		if (!cl) {
 			icon = '';
 		}
-		this.addClass('fa');
+		this.addClass('mdi');
 		if (icon !== this.icon) {
 			if (this.icon) {
 				this.removeClass(exitIconMap[this.icon]);

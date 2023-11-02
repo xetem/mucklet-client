@@ -34,7 +34,7 @@ class CreateRoomProfile {
 		this.module.cmd.addPrefixCmd('create', {
 			key: 'roomprofile',
 			next: [
-				new TextStep('key', {
+				new TextStep('key-variant', {
 					regex: /^[\w\s]*\w/,
 					name: "profile keyword",
 					maxLength: () => this.module.info.getCore().keyMaxLength,

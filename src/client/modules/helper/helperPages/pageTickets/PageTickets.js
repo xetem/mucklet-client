@@ -61,7 +61,7 @@ class PageTickets {
 							e.stopPropagation();
 						},
 					}}, [
-						n.component(new FAIcon('medkit')),
+						n.component(new FAIcon('medical-bag')),
 						n.component(new Context(
 							() => new CollectionWrapper(tickets, { filter: m => !m.assigned, eventBus: this.app.eventBus }),
 							unassigned => unassigned.dispose(),

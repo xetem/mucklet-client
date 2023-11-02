@@ -27,7 +27,7 @@ class PageChar {
 			close: char && char.id != ctrl.id
 				? () => ctrl.call('look', { charId: ctrl.id })
 				: null,
-			closeIcon: 'eye-slash',
+			closeIcon: 'eye-off',
 		}));
 
 		// Add sleep tool

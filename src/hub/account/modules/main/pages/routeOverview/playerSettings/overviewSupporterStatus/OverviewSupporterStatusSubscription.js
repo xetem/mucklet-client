@@ -30,7 +30,7 @@ class OverviewSupporterStatusSubscription {
 			}}, [
 				n.elem('div', { className: 'badge--select' }, [
 					n.elem('div', { className: 'badge--faicon' }, [
-						n.component(new FAIcon('refresh')),
+						n.component(new FAIcon('cached')),
 					]),
 					n.elem('div', { className: 'badge--info-morepad' }, [
 						n.elem('div', { className: 'overviewsupporterstatus-offer--title badge--title badge--nowrap' }, [

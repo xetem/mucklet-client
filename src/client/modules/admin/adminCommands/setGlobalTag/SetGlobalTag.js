@@ -17,7 +17,7 @@ const helpText =
 const defaultAttr = [
 	{
 		key: 'keyword',
-		value: 'key',
+		value: 'key-variant',
 		stepFactory: module => new TextStep('value', {
 			regex: keyRegex,
 			name: "tag keyword",

@@ -5,8 +5,8 @@ import formatText from 'utils/formatText';
 
 let types = [
 	{ id: 'request', typeTxt: l10n.l('ticketActivityComment.request', "Req."), fromTxt: l10n.l('ticketActivityComment.from', "From") },
-	{ id: 'comment', typeTxt: l10n.l('ticketActivityComment.comment', "Cmt.") },
-	{ id: 'close', typeTxt: l10n.l('ticketActivityComment.close', "Close") },
+	{ id: 'chat', typeTxt: l10n.l('ticketActivityComment.comment', "Cmt.") },
+	{ id: 'close-thick', typeTxt: l10n.l('ticketActivityComment.close', "Close") },
 	{ id: 'reopen', typeTxt: l10n.l('ticketActivityComment.open', "Open") },
 ];
 

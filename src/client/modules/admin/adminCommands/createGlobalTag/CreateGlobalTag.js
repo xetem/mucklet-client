@@ -29,7 +29,7 @@ class CreateGlobalTag {
 		this.module.cmd.addPrefixCmd('create', {
 			key: 'globaltag',
 			next: [
-				new TextStep('key', {
+				new TextStep('key-variant', {
 					regex: keyRegex,
 					name: "global tag keyword",
 					maxLength: () => this.module.info.getTag().tagKeyMaxLength,

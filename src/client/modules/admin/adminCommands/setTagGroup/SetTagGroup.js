@@ -56,7 +56,7 @@ class SetTagGroup {
 		this.module.cmd.addPrefixCmd('set', {
 			key: 'taggroup',
 			next: [
-				new ListStep('key', this.module.tags.getGroupsList(), {
+				new ListStep('key-variant', this.module.tags.getGroupsList(), {
 					name: "tag group",
 				}),
 				new DelimStep(":", { errRequired: null }),

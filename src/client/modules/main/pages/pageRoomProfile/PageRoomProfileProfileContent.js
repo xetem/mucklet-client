@@ -22,7 +22,7 @@ class PageRoomProfileProfileContent {
 					ev.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('refresh')),
+				n.component(new FAIcon('cached')),
 			]),
 			n.elem('button', { className: 'iconbtn medium solid smallicon', events: {
 				click: (c, ev) => {

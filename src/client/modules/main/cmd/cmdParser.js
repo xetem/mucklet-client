@@ -8,7 +8,7 @@ const tokenTags = {
 	delim: 'operator',
 	cmd: 'name',
 	attr: 'propertyName',
-	unknown: 'comment',
+	unknown: 'chat',
 	entityid: 'keyword',
 	ooc: 'meta',
 };

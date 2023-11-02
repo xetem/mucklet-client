@@ -29,7 +29,7 @@ class CharSettingsBotTokenContent {
 						e.stopPropagation();
 					},
 				}}, [
-					n.component(new FAIcon('clipboard')),
+					n.component(new FAIcon('content-copy')),
 					n.component(new Txt(l10n.l('charSettingsBotToken.copy', "Copy to clipboard"))),
 				]),
 				n.elem('button', { className: 'iconbtn tiny solid tinyicon flex-auto', events: {
@@ -38,7 +38,7 @@ class CharSettingsBotTokenContent {
 						e.stopPropagation();
 					},
 				}}, [
-					n.component(new FAIcon('trash')),
+					n.component(new FAIcon('delete')),
 				]),
 			]),
 		]));

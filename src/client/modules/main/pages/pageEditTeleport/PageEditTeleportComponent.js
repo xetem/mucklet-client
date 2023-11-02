@@ -66,7 +66,7 @@ class PageEditTeleportComponent {
 				n.elem('button', { events: {
 					click: () => this._delete(),
 				}, className: 'iconbtn medium' }, [
-					n.component(new FAIcon('trash')),
+					n.component(new FAIcon('delete')),
 				]),
 			]),
 		]));

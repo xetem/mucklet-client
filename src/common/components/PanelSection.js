@@ -45,7 +45,7 @@ class PanelSection extends RootElem {
 				),
 				n.component(opt.noToggle
 					? null
-					: new FAIcon('caret-right', { className: 'panelsection--caret' }),
+					: new FAIcon('menu-right', { className: 'panelsection--caret' }),
 				),
 			]),
 			n.component('content', new Collapser(null, { className: 'panelsection--content', duration: opt.duration })),

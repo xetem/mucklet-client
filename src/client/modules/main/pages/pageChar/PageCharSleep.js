@@ -24,13 +24,13 @@ class PageCharSleep {
 					? new Elem(n => n.elem('button', { className: 'btn medium primary', events: {
 						click: () => this._wakeupChar(),
 					}}, [
-						n.component(new FAIcon('sign-in')),
+						n.component(new FAIcon('login')),
 						n.component(new Txt(l10n.l('pageChar.wakeUp', "Wake up"))),
 					]))
 					: new Elem(n => n.elem('button', { className: 'btn small', events: {
 						click: () => this._releaseChar(),
 					}}, [
-						n.component(new FAIcon('sign-out')),
+						n.component(new FAIcon('logout')),
 						n.component(new Txt(l10n.l('pageChar.sleep', "Sleep"))),
 					])),
 				);

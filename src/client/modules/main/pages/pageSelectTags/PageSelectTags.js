@@ -32,7 +32,7 @@ class PageSelectTags {
 					e.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('list-ul')),
+				n.component(new FAIcon('format-list-checks')),
 			])),
 		});
 	}

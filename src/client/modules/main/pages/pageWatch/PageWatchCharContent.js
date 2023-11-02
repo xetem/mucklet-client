@@ -45,7 +45,7 @@ class PageWatchCharContent {
 						ev.stopPropagation();
 					},
 				}}, [
-					n.component(new FAIcon('trash')),
+					n.component(new FAIcon('delete')),
 				]),
 			]),
 		]));

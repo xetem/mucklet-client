@@ -35,7 +35,7 @@ class DialogCommentTicket {
 			className: 'dialogcommentticket',
 			content: new Elem(n => n.elem('div', [
 				n.component(new ModelTxt(ticket.char, m => (m.name + " " + m.surname).trim(), { className: 'dialogcommentticket--fullname flex-1' })),
-				n.component('comment', new PanelSection(
+				n.component('chat', new PanelSection(
 					l10n.l('dialogCommentTicket.comment', "Comment"),
 					new Textarea(model.comment, {
 						className: 'dialogcommentticket--comment dialog--input common--paneltextarea-small common--desc-size',
@@ -63,13 +63,13 @@ class DialogCommentTicket {
 		});
 
 		this.dialog.open();
-		this.dialog.getContent().getNode('comment').getComponent().getElement().focus();
+		this.dialog.getContent().getNode('chat').getComponent().getElement().focus();
 	}
 
 	_commentTicket(ticket, model) {
 		if (this.closePromise) return this.closePromise;
 
-		ticket.call('comment', {
+		ticket.call('chat', {
 			comment: model.comment.trim(),
 		}).then(() => {
 			if (this.dialog) {

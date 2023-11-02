@@ -93,7 +93,7 @@ class PageAwakeComponent {
 								},
 							},
 						}, [
-							n.component(new FAIcon('times')),
+							n.component(new FAIcon('close-thick')),
 						]),
 					]),
 					n.elem('div', { className: 'pageawake--count' }, [

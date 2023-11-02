@@ -21,7 +21,7 @@ class MobilePanel extends RootElem {
 	 * @param {boolean} [opt.closed] Flag to tell if the panel should start as closed.
 	 * @param {function} [opt.onClose] Optional callback function called whenever the panel is closed.
 	 * @param {function} [opt.onClick] Optional callback function called whenever the top-right button is clicked. Button will be hidden if null.
-	 * @param {function} [opt.clickIcon] Optional icon to use for the top-right button. Defaults to 'close'.
+	 * @param {function} [opt.clickIcon] Optional icon to use for the top-right button. Defaults to 'close-thick'.
 	 */
 	constructor(title, component, opt) {
 		opt = Object.assign({ align: "left" }, opt);
@@ -66,7 +66,7 @@ class MobilePanel extends RootElem {
 						},
 					},
 				}, [
-					n.component(new FAIcon(this._alignLeft ? 'caret-left' : 'caret-right')),
+					n.component(new FAIcon(this._alignLeft ? 'menu-left' : 'menu-right')),
 				]),
 				n.component('btn', new Fader(null, { className: 'mobilepanel--btncont' })),
 				n.component(this.titleFader),
@@ -168,12 +168,12 @@ class MobilePanel extends RootElem {
 	/**
 	 * Sets the right corner button and click callback.
 	 * @param {?function} onClick Callback function when clicked. If null, the button will be removed.
-	 * @param {string} [icon] Icon to use for button. Defaults to 'close'
+	 * @param {string} [icon] Icon to use for button. Defaults to 'close-thick'
 	 * @returns {this}
 	 */
 	setButton(onClick, icon) {
 		this._onButtonClick = onClick || null;
-		this.clickBtn.getNode('icon').setIcon(icon || 'chevron-circle-left');
+		this.clickBtn.getNode('icon').setIcon(icon || 'chevron-left-circle');
 		this.component.getNode('btn').setComponent(onClick ? this.clickBtn : null);
 		return this;
 	}

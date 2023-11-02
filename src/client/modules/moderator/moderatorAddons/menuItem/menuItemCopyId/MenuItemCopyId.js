@@ -19,7 +19,7 @@ class MenuItemCopyId {
 		this.module.charLog.addMenuItem({
 			id: 'copyId',
 			name: l10n.l('menuItemCopyId.report', "Copy ID"),
-			icon: 'clipboard',
+			icon: 'content-copy',
 			onClick: this._copy.bind(this),
 			filter: (charId, ev) => ev.char,
 			sortOrder: 400,

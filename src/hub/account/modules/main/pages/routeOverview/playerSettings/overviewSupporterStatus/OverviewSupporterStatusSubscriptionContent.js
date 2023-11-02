@@ -70,7 +70,7 @@ class OverviewSupporterStatusSubscriptionContent {
 					n.component(new ModelTxt(this.offer, m => txtRecurrence.toLocaleString(m.recurrence))),
 				]),
 				n.elem('p', { className: 'dialog--error' }, [
-					n.component(new FAIcon('info-circle')),
+					n.component(new FAIcon('information')),
 					n.html("&nbsp;&nbsp;"),
 					n.component(new Txt(l10n.l('overviewSupporterStatus.unsubscribeWarning', "You will keep the supporter status for the remaining days of the period. No content will be deleted, but some functionality may become inaccessible without supporter status."))),
 				]),

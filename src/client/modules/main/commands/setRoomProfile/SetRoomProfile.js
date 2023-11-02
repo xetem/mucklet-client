@@ -25,7 +25,7 @@ const defaultAttr = [
 	},
 	{
 		key: 'keyword',
-		value: 'key',
+		value: 'key-variant',
 		stepFactory: module => new TextStep('value', {
 			regex: /^[\w\s]*\w/,
 			name: "room profile keyword",

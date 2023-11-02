@@ -106,7 +106,7 @@ class DialogAboutChar {
 												},
 											},
 										}, [
-											n.component('ico', new FAIcon(isWatched ? 'eye-slash' : 'eye')),
+											n.component('ico', new FAIcon(isWatched ? 'eye-off' : 'eye')),
 											n.component('txt', new Txt(isWatched ? txtUnwatch : txtWatch)),
 										])));
 									},
@@ -134,7 +134,7 @@ class DialogAboutChar {
 							n.component('puppeteer', new Collapser()),
 						]),
 						n.elem('div', { className: 'pad-top-xl pad-bottom-m flex-row margin16' }, [
-							n.elem('close', 'button', {
+							n.elem('close-thick', 'button', {
 								className: 'btn primary flex-auto common--btnwidth',
 								events: { click: () => this.close() },
 							}, [
@@ -182,7 +182,7 @@ class DialogAboutChar {
 
 			this.dialog.open();
 			try {
-				this.dialog.getContent().getNode('close').focus();
+				this.dialog.getContent().getNode('close-thick').focus();
 			} catch (e) {}
 		});
 	}

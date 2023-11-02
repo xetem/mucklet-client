@@ -60,7 +60,7 @@ class PageReportsMessage {
 									ev.stopPropagation();
 								},
 							}}, [
-								n.component(new FAIcon('clipboard')),
+								n.component(new FAIcon('content-copy')),
 							]),
 						]),
 					]),

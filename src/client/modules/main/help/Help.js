@@ -163,12 +163,12 @@ const defaultCategories = [
 			`	<section class="charlog--pad"><div class="charlog--code"><code>create room</code></div></section>` +
 			`	<p>This will teleport you to a new room with a default name. If you wish to set it as your home, type:</p>` +
 			`	<section class="charlog--pad"><div class="charlog--code"><code>register home</code></div></section>` +
-			`	<p>When you own a room, a little pencil (<i aria-hidden="true" class="fa fa-pencil"></i>) icon will show up in the <em>Room Info</em> panel. Click this icon to edit the room.</p>` +
+			`	<p>When you own a room, a little pencil (<i aria-hidden="true" class="mdi mdi-pencil"></i>) icon will show up in the <em>Room Info</em> panel. Click this icon to edit the room.</p>` +
 			`</section>` +
 			`<section class="charlog--pad">` +
 			`	<h4>Create exits</h4>` +
-			`	<p>In the <em>Room Info</em> panel, by the <em>Exits</em> section, you will also see a plus (<i aria-hidden="true" class="fa fa-plus"></i>) icon. Click this icon to create an exit to a new room, or to an old room of yours. If you create a new room, a return exit will automatically be created.</p>` +
-			`	<p>Each exit will also have a pencil (<i aria-hidden="true" class="fa fa-pencil"></i>) icon that lets you edit the exit's attributes and messages shown when using the exit.</p>` +
+			`	<p>In the <em>Room Info</em> panel, by the <em>Exits</em> section, you will also see a plus (<i aria-hidden="true" class="mdi mdi-plus"></i>) icon. Click this icon to create an exit to a new room, or to an old room of yours. If you create a new room, a return exit will automatically be created.</p>` +
+			`	<p>Each exit will also have a pencil (<i aria-hidden="true" class="mdi mdi-pencil"></i>) icon that lets you edit the exit's attributes and messages shown when using the exit.</p>` +
 			`</section>` +
 			`<section class="charlog--pad">` +
 			`	<h4>Teleporting</h4>` +

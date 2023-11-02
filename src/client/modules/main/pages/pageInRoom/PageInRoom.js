@@ -30,7 +30,7 @@ class PageInRoom {
 					ev.stopPropagation();
 				},
 			}}, [
-				n.component(new FAIcon('expand')),
+				n.component(new FAIcon('arrow-expand')),
 			])),
 		});
 	}

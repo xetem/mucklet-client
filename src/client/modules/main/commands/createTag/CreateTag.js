@@ -30,7 +30,7 @@ class CreateTag {
 		this.module.cmd.addPrefixCmd('create', {
 			key: 'tag',
 			next: [
-				new TextStep('key', {
+				new TextStep('key-variant', {
 					regex: tagRegex,
 					name: "tag keyword",
 					maxLength: () => this.module.info.getTag().tagKeyMaxLength,

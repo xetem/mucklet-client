@@ -21,7 +21,7 @@ class ScreenDialog {
 			n.elem('div', { className: 'screendialog--container' + (this.size ? ' ' + this.size : '') }, [
 				this.title || this.close ? n.elem('div', { className: 'screendialog--head' }, [
 					this.close ? n.elem('button', { className: 'screendialog--close iconbtn medium', events: { click: () => this.close() }}, [
-						n.component(new FAIcon('close')),
+						n.component(new FAIcon('close-thick')),
 					]) : n.component(null),
 					n.component(new Txt(this.title || "", { tagName: 'h2' })),
 				]) : n.component(null),

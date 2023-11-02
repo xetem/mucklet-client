@@ -42,8 +42,8 @@ class LayoutMobileTitleBar {
 				let pi = m.pageInfo;
 				c.getNode('txt').setText(pi.title || (m.page && m.page.id) || m.tabId);
 				let icon = pi.closeIcon || (m.pageIdx > 0
-					? 'chevron-circle-left'
-					: 'times'
+					? 'chevron-left-circle'
+					: 'close-thick'
 				);
 				if (currentIcon != icon) {
 					c.getNode('icon').setComponent(new FAIcon(icon));

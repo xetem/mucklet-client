@@ -33,7 +33,7 @@ class DialogCommentReport {
 			className: 'dialogcommentreport',
 			content: new Elem(n => n.elem('div', [
 				n.component(new ModelTxt(report.char, m => (m.name + " " + m.surname).trim(), { className: 'dialogcommentreport--fullname flex-1' })),
-				n.component('comment', new PanelSection(
+				n.component('chat', new PanelSection(
 					l10n.l('dialogCommentReport.comment', "Comment"),
 					new Textarea(model.comment, {
 						className: 'dialogcommentreport--comment dialog--input common--paneltextarea-small common--desc-size',
@@ -61,13 +61,13 @@ class DialogCommentReport {
 		});
 
 		this.dialog.open();
-		this.dialog.getContent().getNode('comment').getComponent().getElement().focus();
+		this.dialog.getContent().getNode('chat').getComponent().getElement().focus();
 	}
 
 	_commentReport(report, model) {
 		if (this.closePromise) return this.closePromise;
 
-		report.call('comment', {
+		report.call('chat', {
 			comment: model.comment.trim(),
 		}).then(() => {
 			if (this.dialog) {

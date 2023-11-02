@@ -91,7 +91,7 @@ class MobileRoomPanel {
 
 		this.component
 			.setTitle(pi.title || defaultTitle)
-			.setButton(close || (() => this.toggle(false)), close ? pi.closeIcon || 'chevron-circle-left' : 'times')
+			.setButton(close || (() => this.toggle(false)), close ? pi.closeIcon || 'chevron-left-circle' : 'close-thick')
 			.setComponent(pi.component, {
 				onRender: () => {
 					// Restore scrolling of page

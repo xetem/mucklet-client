@@ -23,7 +23,7 @@ class PageRoomZoomBar {
 			new Elem(n => n.elem('div', { className: 'pageroom-zoombar' }, [
 				n.elem('div', { className: 'pageroom-zoombar--zoomin' }, [
 					n.elem('zoomin', 'button', { className: 'iconbtn medium', events: { click: () => this._zoom(-1) }}, [
-						n.component(new FAIcon('search-plus')),
+						n.component(new FAIcon('magnify-plus-outline')),
 					]),
 				]),
 				n.component(new CollectionList(this.areas, area => new ModelComponent(
@@ -42,7 +42,7 @@ class PageRoomZoomBar {
 				})),
 				n.elem('div', { className: 'pageroom-zoombar--zoomout' }, [
 					n.elem('zoomout', 'button', { className: 'iconbtn medium', events: { click: () => this._zoom(1) }}, [
-						n.component(new FAIcon('search-minus')),
+						n.component(new FAIcon('magnify-minus-outline')),
 					]),
 				]),
 			])),

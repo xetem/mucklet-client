@@ -53,7 +53,7 @@ class KeywordList {
 							},
 						},
 					}, [
-						n.component(new FAIcon('times')),
+						n.component(new FAIcon('close-thick')),
 					])) : null),
 				])),
 				{

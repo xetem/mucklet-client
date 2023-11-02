@@ -26,7 +26,7 @@ class PageCharSelectCharContent {
 						e.stopPropagation();
 					},
 				}}, [
-					n.component(new FAIcon('sign-in')),
+					n.component(new FAIcon('login')),
 					n.component(new ModelTxt(this.char, m => m.puppeteer
 						? l10n.l('pageCharSelect.control', "Control")
 						: l10n.l('pageCharSelect.wakeUp', "Wake up"),
@@ -89,7 +89,7 @@ class PageCharSelectCharContent {
 									e.stopPropagation();
 								},
 							}}, [
-								n.component(new FAIcon('sign-out')),
+								n.component(new FAIcon('logout')),
 								n.component(new ModelTxt(this.char, m => m.state != 'awake'
 									? l10n.l('pageCharSelect.release', "Release")
 									: l10n.l('pageCharSelect.sleep', "Sleep"),

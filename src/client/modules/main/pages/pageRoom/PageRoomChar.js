@@ -48,7 +48,7 @@ class PageRoomChar {
 													ev.stopPropagation();
 												},
 											}}, [
-												n.component(new FAIcon('file-text')),
+												n.component(new FAIcon('note-text')),
 											]),
 										])),
 										(m, c) => c[m.props[this.char.id] ? 'addNodeClass' : 'removeNodeClass']('note', 'hasnote'),

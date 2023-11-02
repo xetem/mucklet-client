@@ -9,7 +9,7 @@ import errString from 'utils/errString';
 const stateIcons = {
 	pending: 'question',
 	accepted: 'check',
-	rejected: 'times',
+	rejected: 'close-thick',
 	failed: 'check',
 };
 
@@ -118,7 +118,7 @@ class PageRequestsRequest {
 														e.stopPropagation();
 													},
 												}}, [
-													n.component(new FAIcon('trash')),
+													n.component(new FAIcon('delete')),
 													n.component(new Txt(l10n.l('pageRequest.revoke', "Revoke"))),
 												]),
 											]),
@@ -140,7 +140,7 @@ class PageRequestsRequest {
 														e.stopPropagation();
 													},
 												}}, [
-													n.component(new FAIcon('times')),
+													n.component(new FAIcon('close-thick')),
 													n.component(new Txt(l10n.l('pageRequest.reject', "Reject"))),
 												]),
 											]),

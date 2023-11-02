@@ -73,7 +73,7 @@ class PageEditCharComponent {
 									}),
 								},
 							}, [
-								n.component(new FAIcon('trash')),
+								n.component(new FAIcon('delete')),
 								n.component(new Txt(l10n.l('pageEditChar.delete', "Delete"))),
 							])),
 							(m, c) => c.setProperty('disabled', m.image ? null : 'disabled'),
@@ -115,7 +115,7 @@ class PageEditCharComponent {
 									}),
 								},
 							}, [
-								n.component(new FAIcon('trash')),
+								n.component(new FAIcon('delete')),
 								n.component(new Txt(l10n.l('pageEditChar.delete', "Delete"))),
 							])),
 							(m, c) => c.setProperty('disabled', m.avatar ? null : 'disabled'),

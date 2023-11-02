@@ -80,7 +80,7 @@ class RoomPanel {
 
 		this.component
 			.setTitle(pi.title || '')
-			.setButton(pi.close || (page && page.close) || null, pi.closeIcon || (page && page.closeIcon) || 'chevron-circle-left')
+			.setButton(pi.close || (page && page.close) || null, pi.closeIcon || (page && page.closeIcon) || 'chevron-left-circle')
 			.setComponent(pi.component, {
 				onRender: () => {
 					// Restore scrolling of page

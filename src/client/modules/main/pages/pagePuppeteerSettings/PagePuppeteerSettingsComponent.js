@@ -88,7 +88,7 @@ class PagePuppeteerSettingsComponent {
 					n.elem('button', { events: {
 						click: () => this.module.dialogUnregisterPuppet.open(this.puppeteer),
 					}, className: 'iconbtn medium light' }, [
-						n.component(new FAIcon('trash')),
+						n.component(new FAIcon('delete')),
 					]),
 				]),
 			])),

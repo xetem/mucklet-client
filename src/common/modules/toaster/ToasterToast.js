@@ -20,7 +20,7 @@ class ToasterToast {
 						click: () => this.close(),
 					},
 				}, [
-					n.component(new FAIcon('close')),
+					n.component(new FAIcon('close-thick')),
 				]));
 			}
 			if (opt.title) {

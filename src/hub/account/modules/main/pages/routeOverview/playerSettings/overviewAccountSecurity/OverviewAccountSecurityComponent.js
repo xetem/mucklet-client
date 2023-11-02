@@ -13,7 +13,7 @@ class OverviewAccountSecurityComponent extends ModelCollapser {
 					new Elem(n => n.elem('button', { events: {
 						click: () => module.dialogChangePassword.open(m.id),
 					}, className: 'btn medium light icon-left' }, [
-						n.component(new FAIcon('key')),
+						n.component(new FAIcon('key-variant')),
 						n.component(new Txt(l10n.l('overviewAccountSecurity.changePassword', "Change password"))),
 					])),
 					{

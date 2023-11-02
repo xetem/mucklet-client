@@ -23,7 +23,7 @@ class DeleteTagGroup {
 		this.module.cmd.addPrefixCmd('delete', {
 			key: 'taggroup',
 			next: [
-				new ListStep('key', this.module.tags.getGroupsList(), {
+				new ListStep('key-variant', this.module.tags.getGroupsList(), {
 					name: "group to delete",
 				}),
 			],

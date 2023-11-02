@@ -102,7 +102,7 @@ class PageCharSelectPuppetContent {
 								e.stopPropagation();
 							},
 						}}, [
-							n.component(new FAIcon('sign-in')),
+							n.component(new FAIcon('login')),
 							n.component(new ModelTxt(this.puppet, m => this.puppet.state == 'awake'
 								? l10n.l('pageCharSelect.control', "Control")
 								: l10n.l('pageCharSelect.wakeUp', "Wake up"),
@@ -118,7 +118,7 @@ class PageCharSelectPuppetContent {
 								e.stopPropagation();
 							},
 						}}, [
-							n.component(new FAIcon('refresh')),
+							n.component(new FAIcon('cached')),
 							n.component(new Txt(l10n.l('pageCharSelect.requestControl', "Request control"))),
 						]),
 					]));

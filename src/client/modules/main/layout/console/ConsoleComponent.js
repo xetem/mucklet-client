@@ -72,7 +72,7 @@ class ConsoleComponent {
 											},
 										},
 									}, [
-										n.component(new FAIcon('caret-up')),
+										n.component(new FAIcon('menu-up')),
 									]),
 									n.elem('button', {
 										className: 'console--toolbtn console--touchonly iconbtn small',
@@ -96,7 +96,7 @@ class ConsoleComponent {
 											},
 										},
 									}, [
-										n.component(new FAIcon('caret-down')),
+										n.component(new FAIcon('menu-down')),
 									]),
 								])),
 								(m, c) => {

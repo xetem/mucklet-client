@@ -74,7 +74,7 @@ class PageEditRoomProfileComponent {
 												}),
 											},
 										}, [
-											n.component(new FAIcon('refresh')),
+											n.component(new FAIcon('cached')),
 											n.component(new Txt(l10n.l('pageEditRoomProfile.update', "Update"))),
 										])),
 										(m, c) => this._setUpdateImageDisabled(c, ctx),
@@ -97,7 +97,7 @@ class PageEditRoomProfileComponent {
 										}),
 									},
 								}, [
-									n.component(new FAIcon('trash')),
+									n.component(new FAIcon('delete')),
 									n.component(new Txt(l10n.l('pageEditRoomProfile.delete', "Delete"))),
 								])),
 								(m, c) => c.setProperty('disabled', m.image ? null : 'disabled'),
@@ -175,7 +175,7 @@ class PageEditRoomProfileComponent {
 							confirm: l10n.l('pageEditRoomProfile.delete', "Delete"),
 						}),
 					}, className: 'iconbtn medium' }, [
-						n.component(new FAIcon('trash')),
+						n.component(new FAIcon('delete')),
 					]),
 				]),
 			])),

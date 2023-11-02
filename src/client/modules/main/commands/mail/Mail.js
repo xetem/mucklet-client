@@ -101,7 +101,7 @@ class Mail {
 					body: new Elem(n => n.elem('div', [
 						n.component(new Txt(l10n.l('mail.mailPuppetBody', "Do you really wish to mail a puppet?"), { tagName: 'p' })),
 						n.elem('p', { className: 'dialog--strong' }, [
-							n.component(new FAIcon('info-circle')),
+							n.component(new FAIcon('information')),
 							n.html("&nbsp;&nbsp;"),
 							n.component(new Txt(l10n.l('mail.mailPuppetWarning', "The mail will be sent to the puppet's owner, not the controlling puppeteer."))),
 						]),

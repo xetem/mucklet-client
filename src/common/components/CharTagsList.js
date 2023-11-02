@@ -120,7 +120,7 @@ class CharTagsList {
 									},
 								},
 							}, [
-								n.component(new FAIcon('times')),
+								n.component(new FAIcon('close-thick')),
 							])) : null),
 						])),
 						(m, c) => {

@@ -29,7 +29,7 @@ class CreateTagGroup {
 		this.module.cmd.addPrefixCmd('create', {
 			key: 'taggroup',
 			next: [
-				new TextStep('key', {
+				new TextStep('key-variant', {
 					regex: keyRegex,
 					name: "keyword",
 					maxLength: () => this.module.info.getTag().groupKeyMaxLength,
